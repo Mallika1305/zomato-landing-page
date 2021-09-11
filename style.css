@@ -1,0 +1,506 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color: #d4e3ff;
+    overflow-x: hidden;
+    transition: all 0.5s; 
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+section{
+    margin: 20px 0;
+}
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 9999;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05) ;
+}
+
+.brand__logo{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar__brand{
+    width: 100px;
+}
+
+
+.primary__button{
+       background-image: linear-gradient(
+           to right,
+           #ff512f 0%,
+           #dd2476 51%,
+           #ff512f 100%
+       );
+       padding: 10px;
+       color: white;
+       border-radius: 5px;
+       transition: 1s;
+       background-size: 200% auto;
+       cursor: pointer;
+}
+
+.primary__button:hover{
+    background-position: right center;
+    color: white;
+}
+
+.hero__image__container{
+    position: relative;
+    width: 100%;
+}
+
+.hero__image{
+    position: absolute;
+    width: 100%;
+    right: auto;
+    left: auto;
+    z-index: 3;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.hero__image__shape{
+    position: absolute;
+    right: 2;
+    z-index: 2;
+
+}
+
+.hero__description{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+.text__heading{
+    font-size: 3rem;
+    line-height: 2.25rem;
+    color: #1d3557;
+    font-weight: bold;
+}
+
+.video__footage__container{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.video__footage{
+    position: relative;
+    
+}
+
+.video__footage::before{
+    content: "";
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0.5rem, 0.5rem);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.chef__video{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.video__footage__text{
+    margin-top: 2rem;
+    color: #1d3557;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.food__list__container{
+    width: 100%;
+    position: relative;
+    margin: 2rem 0;
+}
+
+.food__menu__card{
+    background-color: white;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.food__menu__card__image{
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+
+.food__menu__card__title{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1d3557;
+    margin: 0.5rem 0;
+}
+
+.food__menu__card__restaurants{
+    color: #1d3557;
+}
+
+.food__menu__card__description{
+    padding: 1rem;
+}
+
+.food__menu__card__list{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.restaurant__list__container{
+margin-top: 4rem
+}
+
+.restaurant__list__image__container{
+    width: 100%;
+}
+
+.restaurant__list__row__1{
+     display: flex;
+     align-items: baseline;
+}
+
+.restaurant__list__row__2{
+ display: flex;
+ align-items: flex-start;
+ margin-top: 10px;
+}
+
+.restaurant__1 ,
+.restaurant__4{
+    border-radius: 4px;
+    margin: 0 4px;
+    width: 150px;
+    height: 80px;
+}
+
+.restaurant__2,
+ .restaurant__3{
+    border-radius: 4px;
+    margin: 0 4px;
+    width: 200px;
+    height: 100px;
+}
+
+.updates{
+    justify-content: center;
+    text-align: center;
+}
+
+.update__form{
+    margin-top: 1rem;
+}
+
+#email{
+    box-sizing: border-box;
+    border: 1px solid #dd2476;
+    background-color: #ffe1ee;
+    border-radius: 5px;
+    box-shadow: #ff6040;
+    width: 60%;
+    height: 280%;
+
+
+}
+
+.update__container{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.update__btn{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    transition: 1s;
+    background-size: 150% auto;
+    cursor: pointer;
+}
+
+.update__btn:hover{
+    background-position: right center;
+    color: white;
+}
+
+
+.quote{
+    
+    justify-content: center;
+    padding: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+    
+}
+
+.background{
+    position: relative;
+    opacity: 0.5;
+    width: 100%;
+    border-radius: 00.5rem;
+    justify-content: center;
+    height: 50%;
+    z-index: -1;
+}
+
+
+.footer__container{
+    background-image: linear-gradient(
+        to right,
+        #db8777 0%,
+        #c76c95 51%,
+        #db8777 100%
+    );
+    position: relative;
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;  
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  border-radius: 1rem 1rem 0 0;
+  z-index: 9999;
+}
+
+.brand__logo{
+    width: 100%;
+    height: 85%;
+   
+}
+
+.footer__list{
+    color: white;
+    font-weight: 500;
+    margin: 1rem;
+    padding: 2rem;
+    line-height: 3rem;
+}
+
+
+@media (min-width: 360px) {
+    .quote__text{
+        position: relative;
+        bottom: 113px;
+        font-size: 1.2rem;
+        color: white;
+        line-height: 2rem;
+        z-index: 1;
+    }
+
+    .background{
+        position: relative;
+        opacity: 0.5;
+        width: 100%;
+        border-radius: 00.5rem;
+        justify-content: center;
+        height: 130px;
+        z-index: -1;
+    }
+      
+}
+
+@media (min-width: 768px) {
+    .hero__container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .hero__image{
+        margin-top: 2rem;
+    }
+    .text__heading{
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 3rem;
+    }
+
+    .food__list__container{
+        margin: 5rem 0;
+    }
+    .food__menu__card__list{
+        flex-direction: row;
+        padding: 2rem;
+    }
+    .food__menu__card__move__up{
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+    }
+    .food__list__container__diagonal{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transform: skewY(-5deg);
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        );
+        z-index: -3;
+    }
+
+    .restaurant__list__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .restaurant__list__text{
+        width: 100%;
+    }
+
+    .quote__text{
+        position: relative;
+        bottom: 186px;
+        font-size: 3rem;
+        color: white;
+        line-height: 4rem;
+        z-index: 1;
+    }
+
+    .background{
+        position: relative;
+        opacity: 0.5;
+        width: 100%;
+        border-radius: 00.5rem;
+        justify-content: center;
+        height: 227px;
+        z-index: -1;
+    }
+
+   
+}
+
+@media (min-width: 1024px){
+
+    .container{
+        max-width: 900px;
+        
+    }
+
+    .navbar{
+        padding: 0 50px;
+    }
+    .navbar__brand{
+        width: 180px;
+    }
+    .primary__button{
+        font-size: 20px;
+        padding: 15px 20px;
+        font-weight: bold;
+    }
+    .text__heading{
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+    .video__footage__text{
+        width: 80%;
+    }
+
+    
+.restaurant__1 ,
+.restaurant__4{
+    width: 200px;
+    height: 120px;
+}
+
+.restaurant__2,
+ .restaurant__3{
+    width: 280px;
+    height: 200px;
+}
+
+.restaurant__list__image__container{
+    width: 100%;
+}
+
+.quote__text{
+    position: relative;
+    bottom: 246px;
+    font-size: 3rem;
+    color: white;
+    line-height: 5rem;
+}
+
+.background{
+    position: relative;
+    opacity: 0.5;
+    width: 100%;
+    border-radius: 00.5rem;
+    justify-content: center;
+    height: 346px;
+    z-index: -1;
+}
+   
+}
+
+@media (min-width: 1280px) {
+    .container{
+        max-width: 1100px;
+        
+    }
+
+}
+
+@media (min-width: 1536px){
+    .container{
+        max-width: 1250px;
+        
+    }
+     
+}
+
